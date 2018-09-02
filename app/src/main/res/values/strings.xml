@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="enter">Do you like reading books? \nThen this quiz is for you!! Enjoy yourself! :)</string>
+    <string name="edit_part">please write your name</string>
+    <string name="question1">1. In which book does this sentence pass? \n \'The human whose name is written in this book shall die.\'</string>
+    <string name="firstAnswerA">Death Note</string>
+    <string name="firstAnswerB">The dead</string>
+    <string name="question2">2. Which of the following is KurtVonnegut\'s book?</string>
+    <string name="secondAnswerA">To the Light House</string>
+    <string name="secondAnswerB">Breakfast of Champions</string>
+    <string name="question3">3. How many rules are there in Fight Club?</string>
+    <string name="thirdAnswerA">11</string>
+    <string name="thirdAnswerB">8</string>
+    <string name="question4">4. What is the main topic of Germinal?</string>
+    <string name="fourthAnswerA">Mine workers</string>
+    <string name="fourthAnswerB">Life in Paris</string>
+    <string name="question5">5. Please select the two authors who won the Nobel Prize. \nIf you select only one answer it will be counted as empty. </string>
+    <string name="fifthAnswerA">Bob Dylan</string>
+    <string name="fifthAnswerB">Orhan Pamuk</string>
+    <string name="fifthAnswerC">Virgina Woolf</string>
+    <string name="question6">6. Please write the full name of the author who has written Anna Karenina as name+blank+surname</string>
+    <string name="answer_part">name surname</string>
+    <string name="result">Result</string>
+    <string name="send_result">Send The Results</string>
+    <string name="thank1">Thank you </string>
+    <string name="thank2">for attending our quiz!</string>
+    <string name="total_correct">Total correct answer is: </string>
+    <string name="total_wrong">Total wrong answer is: </string>
+    <string name="total_empty1">There are </string>
+    <string name="total_empty2"> empty questions.</string>
+    <string name="final_msg1">You can do better next time:)</string>
+    <string name="final_msg2">You are really good! :)</string>
+    <string name="final_msg3">See you again!</string>
+    <string name="toast_1">You have</string>
+    <string name="toast_2">correct answers out of 6!</string>
+    <string name="toast_3">Detailed results are here...</string>
+
+</resources>

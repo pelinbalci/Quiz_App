@@ -1,0 +1,223 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:text="@string/enter"
+                android:textColor="@color/textColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_view"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bookback5"
+                android:gravity="bottom|center"
+                android:hint="@string/edit_part"
+                android:inputType="textCapWords"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/question1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/first_A"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/firstAnswerA" />
+
+                <RadioButton
+                    android:id="@+id/first_B"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/firstAnswerB" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/question2" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/second_A"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/secondAnswerA" />
+
+                <RadioButton
+                    android:id="@+id/second_B"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/secondAnswerB" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/question3" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/third_A"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/thirdAnswerA" />
+
+                <RadioButton
+                    android:id="@+id/third_B"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/thirdAnswerB" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/question4" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/fourth_A"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/fourthAnswerA" />
+
+                <RadioButton
+                    android:id="@+id/fourth_B"
+                    style="@style/AnswerStyle"
+                    android:onClick="firstQuestionClicked"
+                    android:text="@string/fourthAnswerB" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/question5" />
+
+            <CheckBox
+                android:id="@+id/fifth_A"
+                style="@style/CheckBoxStyle"
+                android:onClick="checkTwoBox"
+                android:text="@string/fifthAnswerA" />
+
+            <CheckBox
+                android:id="@+id/fifth_B"
+                style="@style/CheckBoxStyle"
+                android:onClick="checkTwoBox"
+                android:text="@string/fifthAnswerB" />
+
+            <CheckBox
+                android:id="@+id/fifth_C"
+                style="@style/CheckBoxStyle"
+                android:onClick="checkTwoBox"
+                android:text="@string/fifthAnswerC" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/question6" />
+
+            <EditText
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="bottom|center"
+                android:hint="@string/answer_part"
+                android:inputType="textCapWords"
+                android:textColor="@color/textColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:onClick="submitResult"
+                    android:text="@string/result"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:onClick="sendButton"
+                    android:text="@string/send_result"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/android_goodluck_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:scaleType="center"
+                android:src="@drawable/goodluck" />
+
+            <TextView
+                android:id="@+id/result_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/background"
+                android:text=""
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
